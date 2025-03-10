@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.categorias {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.categoria-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+.categoria-btn img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+#detalhes {
+    margin-top: 20px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#imagemFerramenta {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.thumbnail {
+    position: relative;
+    width: 90%; /* Ajusta dinamicamente para a tela */
+    max-width: 1100px; /* Aumenta mais a largura */
+    height: 150px; /* Mantém a altura reduzida */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo no centro */
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+    filter: brightness(0.7);
+}
+
+.thumbnail .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail .overlay span {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.visitor-container {
+    text-align: center; /* Centraliza tudo */
+    margin-top: 20px;
+}
+
+.visitor-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff; /* Branco para "Visitors Count" */
+    margin-bottom: 5px;
+}
+
+.visitor-box {
+    background-color: #333; /* Fundo escuro */
+    color: #ff6600; /* Laranja para o número */
+    font-size: 20px; /* Reduz tamanho do número */
+    font-weight: bold;
+    padding: 5px 15px; /* Reduz o espaço interno */
+    border-radius: 6px; /* Bordas levemente arredondadas */
+    display: inline-block;
+    min-width: 60px; /* Diminui a largura mínima */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#listaFerramentas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+#listaFerramentas li {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#listaFerramentas li:hover {
+    transform: scale(1.05);
+}
+
+#listaFerramentas img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; border-color: #ff6600; }
+    50% { opacity: 0.5; border-color: yellow; }
+    100% { opacity: 1; border-color: #ff6600; }
+}
+
+#github {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#github img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #ff6600;
+    padding: 2px;
+    transition: transform 0.3s ease;
+    animation: piscar 2s infinite alternate; /* Aplica a animação */
+}
+
+#github img:hover {
+    transform: scale(1.1);
+}

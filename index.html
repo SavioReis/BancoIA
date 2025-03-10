@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas de IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/AI.png">
+</head>
+<body>
+    <section class="thumbnail">
+        <img src="img/thumb.png" alt="Imagem Representativa da IA">
+        <div class="overlay">
+            <span>Banco de Inteligência Artificial</span>
+        </div>
+    </section>
+    <section id="github">
+        <a href="https://github.com/SavioReis" target="_blank">
+            <img src="img/hacker.png" alt="Perfil">
+        </a>
+    </section>
+    <main>
+        <section class="categorias">
+            <h2>Escolha uma categoria</h2>
+            <div class="grid">
+                <button class="categoria-btn" onclick="mostrarFerramentas('imagem')"><img src="img/IA.png" alt="Ícone">IA Geração de Imagens</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('video')"><img src="img/IA.png" alt="Ícone">IA Geração de Vídeo</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('texto')"><img src="img/IA.png" alt="Ícone">IA Geração de Texto</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('animar')"><img src="img/IA.png" alt="Ícone">IA Animar imagens</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('avatar')"><img src="img/IA.png" alt="Ícone">IA Avatar humano</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('narracao')"><img src="img/IA.png" alt="Ícone">IA Narração de texto</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('tlegenda')"><img src="img/IA.png" alt="Ícone">IA Tirar legenda de video</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('trvideos')"><img src="img/IA.png" alt="Ícone">IA Transcrever Videos</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('animesv')"><img src="img/IA.png" alt="Ícone">IA Transformar Videos em Anime</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('dbvideos')"><img src="img/IA.png" alt="Ícone">IA Dublar Videos</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('finstagram')"><img src="img/ferramenta.png" alt="Ícone">Ferramenta - Baixar Videos Instagram</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('ftik')"><img src="img/ferramenta.png" alt="Ícone">Ferramenta - Baixar Videos Tik Tok</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('etiktok')"><img src="img/ferramenta.png" alt="Ícone">Ferramenta - Espionar concorrente tik Tok</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('dyoutube')"><img src="img/ferramenta.png" alt="Ícone">Ferramenta -  Dublador de Videos Youtube</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('rimagem')"><img src="img/ferramenta.png" alt="Ícone">Ferramenta - Remover Fundo Imagem</button>
+                <button class="categoria-btn" onclick="mostrarFerramentas('enavegador')"><img src="img/ferramenta.png" alt="Ícone">Ferramenta - Deixar o Navegador escuro</button>
+            </div>
+        </section>
+        
+        <section id="ferramentas" class="hidden">
+            <h2>Ferramentas Disponíveis</h2>
+            <ul id="listaFerramentas"></ul>
+        </section>
+        
+        <section id="detalhes" class="hidden">
+            <h2>Detalhes da Ferramenta</h2>
+            <img id="imagemFerramenta" src="" alt="Imagem da Ferramenta">
+            <p id="descricaoFerramenta"></p>
+            <a id="linkFerramenta" href="" target="_blank">Acessar Ferramenta</a>
+        </section>
+    </main>
+    <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="visitor-container">
+        <p class="visitor-title">Visitors Count</p>
+        <div class="visitor-box" id="visitantes">0</div>
+    </div>
+    <br> <br>
+    <footer>
+        <p>&copy; 2025 Banco de IA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
